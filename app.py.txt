@@ -8,3 +8,16 @@ def hello_world():
 
 if __name__ == '__main__':
     app.run(debug=True)
+from flask import Flask
+
+# create a new Flask app
+app = Flask(__name__)
+
+# define a route for the root URL of the app
+@app.route('/')
+def hello_world():
+    return 'Hello, World!'
+
+# run the app if this file is executed directly (not imported)
+if __name__ == '__main__':
+    app.run()
