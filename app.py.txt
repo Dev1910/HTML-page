@@ -1,23 +1,17 @@
-from flask import Flask
-
-app = Flask(__name__)
-
-@app.route('/')
-def hello_world():
-    return 'Hello, World!'
-
-if __name__ == '__main__':
-    app.run(debug=True)
-from flask import Flask
-
-# create a new Flask app
-app = Flask(__name__)
-
-# define a route for the root URL of the app
-@app.route('/')
-def hello_world():
-    return 'Hello, World!'
-
-# run the app if this file is executed directly (not imported)
-if __name__ == '__main__':
-    app.run()
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My First Web Page</title>
+</head>
+<body>
+	<h1>Welcome to my website!</h1>
+	<p>Here is some text on my page.</p>
+	<img src="image.jpg" alt="An image on my page">
+	<ul>
+		<li>Item 1</li>
+		<li>Item 2</li>
+		<li>Item 3</li>
+	</ul>
+	<a href="https://www.example.com">Visit Example.com</a>
+</body>
+</html>
